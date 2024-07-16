@@ -1,0 +1,89 @@
+body {
+  background-color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#movable,
+#fixed {
+  width: 30px;
+  height: 80px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px; /* Ecken abgerundet */
+  display: flex; /* Flexbox für Zentrierung */
+  align-items: center; /* Vertikale Zentrierung */
+  justify-content: center; /* Horizontale Zentrierung */
+  text-align: center; /* Text zentrieren, falls er mehrzeilig wird */
+  color: black; /* Textfarbe festlegen */
+  font-size: 12px; /* Schriftgröße anpassen */
+  writing-mode: vertical-lr; /* Text von oben nach unten */
+  transform: rotate(180deg); /* Text umdrehen, damit er von oben beginnt */
+  z-index: 2;
+}
+
+#fixed {
+  left: 300px;
+  top: 150px; /* Weiter heruntergesetzt */
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none; /* Ignore mouse events */
+  border-style: solid; /* Stil für die Grenze hinzugefügt */
+  z-index: 1; /* Z-index gesenkt, um Kreise hinter Rechtecke zu bringen */
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+.info {
+  position: absolute;
+  right: 80px;
+  top: 200px;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.5;
+  color: white;
+  font-weight: normal; /* Schriftgewicht auf normal gesetzt */
+}
+
+.title {
+  position: absolute;
+  right: 80px;
+  top: 0px;
+  width: 500px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white;
+}
+
+.userinfo {
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+  width: 500px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: white;
+}
