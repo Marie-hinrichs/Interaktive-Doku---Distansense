@@ -2,14 +2,26 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <title>Interaktive Distanzzonen</title>
+    <title>Interaktive Doku Distansense</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="movable">Person 1</div>
+    <div id="logoContainer">
+      <img src="logo.png" alt="Logo" id="logo" />
+      <div id="logoText" class="hidden">
+        <p>
+          Distansense ist ein System bestehend aus Projektionen, welches den
+          persönlichen Raum von Reisenden am Bahnhof durch visuelle
+          Darstellungen auf dem Boden sichtbar macht, sobald es zu
+          grenzüberschreitendem Verhalten kommt. Die Projektionen visualisieren
+          außerdem die Reduzierung und Verletzung des persönlichen Raumes und
+          leiten dazu an, mehr Platz zu halten und Rücksicht zu nehmen.
+        </p>
+      </div>
+    </div>
+    <div id="movable">PERSON 1</div>
     <div id="circleMovable" class="circle"></div>
-    <!-- Kreis für das bewegliche Rechteck -->
-    <div id="fixed">Person 2</div>
+    <div id="fixed">PERSON 2</div>
     <div id="circleFixed" class="circle"></div>
     <div id="title" class="title">
       <h1>
@@ -17,9 +29,7 @@
         Distanzen begegnen!
       </h1>
     </div>
-    <!-- Kreis für das fixierte Rechteck -->
     <div id="distanceInfo" class="info"></div>
-    <!-- Info-Bereich für die Distanzzonen -->
     <div id="userInfo" class="userinfo">
       <p>Greife Person 1 mit der Maus und bewege sie näher an Person 2.</p>
     </div>
