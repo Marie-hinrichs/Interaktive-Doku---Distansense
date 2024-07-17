@@ -20,5 +20,6 @@ Logo: Ein Logo wird unten links auf der Seite angezeigt. Über das Logo können 
 
 ## Nutzung
 
+Nur im Chrome-Browser verwenden. Getestet am PC.
 Bewege Person 1: Klicke und ziehe das Rechteck mit der Beschriftung "Person 1".
 Beobachte die Änderungen: Beobachte, wie sich die Kreise und Informationstexte basierend auf der Distanz zwischen den Personen ändern.
